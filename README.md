@@ -19,4 +19,4 @@ NOTE: must fill in .env file with variables as follows:
 
       SID=[Twilio SID]
       token=[Twilio Token]
-      originNumber=[Origin Number (+XXXXXXXXXXX)
+      originNumber=[Origin Number (+XXXXXXXXXXX)]
