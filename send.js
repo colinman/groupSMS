@@ -19,6 +19,10 @@ token = process.env.token;
 
 originNumber = process.env.originNumber;
 
+if (!SID || !token || !originNumber) {
+  return console.log('Please fill in /.env file with constants: SID, token, originNumber (from Twilio)');
+}
+
 client = new twilio.RestClient(SID, token);
 
 if (process.argv.length !== 3) {
