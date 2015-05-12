@@ -12,6 +12,8 @@ SID = process.env.SID
 token = process.env.token
 originNumber = process.env.originNumber
 
+if !SID or !token or !originNumber then return console.log 'Please fill in /.env file with constants: SID, token, originNumber (from Twilio).'
+
 client = new twilio.RestClient SID, token
 
 # Check that args are right
